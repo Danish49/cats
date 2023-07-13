@@ -20,6 +20,7 @@
     flex-direction: column;
     width: 35rem;
     height: 20rem;
+    max-height : 30rem;
     border-radius: 1rem;
     padding: 1rem 2rem;
     gap: 2rem;
