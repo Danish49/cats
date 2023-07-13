@@ -4,7 +4,7 @@ const adviceText = document.querySelector(".adviceText");
 
 const sendRequest = async () => {
   try {
-    const response = await axios.get("https://catfact.ninja/fact");
+    const response = await axios.get("https://catfact.ninja/fact?max_length=300");
     const requestId = response.data.fact.length;
     const requestText = response.data.fact;
     adviceId.innerText = `Fact #${requestId}`;
