@@ -7,7 +7,7 @@ const sendRequest = async () => {
     const response = await axios.get("https://catfact.ninja/fact");
     const requestId = response.data.fact.length;
     const requestText = response.data.fact;
-    adviceId.innerText = `Advice #${requestId}`;
+    adviceId.innerText = `Fact #${requestId}`;
     adviceText.innerText = `"${requestText}"`;
   } catch (e) {
     adviceText.innerText = `"${e}"`;
